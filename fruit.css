@@ -1,5 +1,4 @@
-    @media screen and (max-width: 995px),
-    screen and (max-height: 700px) {
+ 
         body {
             background-image: url(./RTR23YED.jpg);
             background-size: 100%;
@@ -195,4 +194,4 @@
         #subbut.fa fa-search {
             size: 2px;
         }
-    }
+    
