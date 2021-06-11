@@ -1,0 +1,198 @@
+    @media screen and (max-width: 995px),
+    screen and (max-height: 700px) {
+        body {
+            background-image: url(./RTR23YED.jpg);
+            background-size: 100%;
+            max-height: 600px;
+            max-width: 1280px;
+        }
+        .firsthead {
+            background-color: black;
+            height: 12px;
+            width: 265px;
+            opacity: 1;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        p {
+            color: aliceblue;
+            position: absolute;
+            top: 1px;
+            left: 10px;
+            font-size: 3px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #para2 {
+            color: orange;
+            position: absolute;
+            left: 60px;
+            top: 0px;
+            font-size: 4px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #para3 {
+            color: aliceblue;
+            position: absolute;
+            left: 135px;
+            top: 0px;
+            font-size: 4px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #para4 {
+            color: aliceblue;
+            position: absolute;
+            left: 160px;
+            top: 0px;
+            font-size: 4px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #para5 {
+            color: aliceblue;
+            position: absolute;
+            left: 200px;
+            top: 0px;
+            font-size: 4px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #para6 {
+            color: aliceblue;
+            position: absolute;
+            left: 235px;
+            top: -3px;
+            font-size: 4px;
+            border: 1px;
+            border-style: none;
+            border-radius: 15%;
+            background-color: orangered;
+            padding: 2px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #para7 {
+            color: black;
+            position: absolute;
+            top: 15px;
+            font-size: 4px;
+            left: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .sechead {
+            background-color: aliceblue;
+            height: 20px;
+            width: 265px;
+            opacity: 1;
+            position: absolute;
+            top: 11px;
+            left: 0px;
+        }
+        #para8 {
+            color: orangered;
+            position: absolute;
+            top: 8px;
+            left: 100px;
+            font-size: 3px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 8px;
+        }
+        /* #para9 {
+                    color: aliceblue;
+                    position: absolute;
+                    top: 20px;
+                    left: 10px;
+                    font-size: 3px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-size: 3px;
+                }
+                
+                */
+        #para10 {
+            color: aliceblue;
+            position: absolute;
+            top: 28px;
+            font-size: 4px;
+            left: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: bold;
+            /* font-size: 3px; */
+        }
+        #para11 {
+            color: aliceblue;
+            position: absolute;
+            top: 28px;
+            font-size: 4px;
+            left: 36px;
+            font-style: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #para12 {
+            color: aliceblue;
+            position: absolute;
+            top: 28px;
+            font-size: 4px;
+            left: 70px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* font-size: 8px; */
+            font-style: bold;
+        }
+        #para13 {
+            color: whitesmoke;
+            top: 28px;
+            font-size: 4px;
+            left: 100px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: bold;
+            /* font-size: 8px; */
+        }
+        #para14 {
+            color: whitesmoke;
+            top: 28px;
+            font-size: 4px;
+            left: 130px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* font-size: 8px; */
+            font-style: bold;
+        }
+        .thirdhead {
+            background-color: orangered;
+            height: 15px;
+            width: 265px;
+            opacity: 1;
+            position: absolute;
+            top: 27px;
+            left: 0px;
+        }
+        #para {
+            color: aliceblue;
+            position: absolute;
+            left: 200px;
+            top: 28px;
+            font-size: 1px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #searchtex {
+            position: absolute;
+            left: 192px;
+            top: 18px;
+            height: 2px;
+            width: 30px;
+            font-size: 3px;
+        }
+        #subbut {
+            position: absolute;
+            left: 231px;
+            top: 14px;
+            height: 12px;
+            width: 1px;
+        }
+        #texpara {
+            color: black;
+            position: absolute;
+            top: 16px;
+            left: 154px;
+            font-size: 4px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #subbut.fa fa-search {
+            size: 2px;
+        }
+    }
