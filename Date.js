@@ -1,10 +1,14 @@
+alert("Welcome to Age calculator ,please hit ok to continue");
 var dob = +prompt("enter your date on which you born");
 var mob = prompt("enter your month of birth");
 var yob = prompt("enter your year of birth");
 var month = mob.toLowerCase();
 
+
+
+
 var date = new Date();
-date.setMonth(mob - 1);
+date.setMonth(mob);
 date.setDate(dob);
 date.setFullYear(yob);
 
@@ -44,25 +48,19 @@ if (month === "january" || month === "jan" || month === "1") {
     alert("please insert  a valid month of birth");
 
 }
-let diffMonth = currDate.getMonth() - date.getMonth()
-let diffYear = currDate.getFullYear() - date.getFullYear();
+let diffMonth = currDate.getMonth() - date.getMonth();
+let diffYear = (currDate.getTime() - date.getTime()) / 31556952000;
+let year = Math.floor(diffYear);
 
-
-if (currDate.getDate() === date.getDate() && currDate.getMonth() === date.getMonth()) {
-    document.write(diffYear + " years ")
-} else if (currDate.getMonth() === date.getMonth() && currDate.getDate() < date.getDate()) {
-    document.write(diffYear + " years ")
-} else {
-    document.write(diffYear - 1 + " years ")
-}
+console.log(year + " years ");
+document.write(year, "  years  ");
 
 
 if (currDate.getMonth() < date.getMonth()) {
-    document.write(12 + diffMonth + " months & ")
+    document.write(12 - (date.getMonth() - currDate.getMonth()) + " months & ")
 } else if (currDate.getMonth() > date.getMonth()) {
-    document.write(12 - diffMonth + " months & ")
+    document.write((currDate.getMonth() - date.getMonth()) + " months & ")
 } else {
-
     document.write(diffMonth + " months & ")
 }
 
