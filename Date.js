@@ -1,3 +1,7 @@
+// Roll no 17502;
+
+
+
 alert("Welcome to Age calculator ,please hit ok to continue");
 var dob = +prompt("enter your date on which you born");
 var mob = prompt("enter your month of birth");
