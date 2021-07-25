@@ -75,7 +75,7 @@ const Peoples = new CheckPopulation(
 );
 console.log(Peoples);
 
-//save vales of education
+// save vales of education
 function educationData() {
   var select = document.getElementById("education");
   if (localStorage === "") {
@@ -91,7 +91,7 @@ function educationData() {
   }
 }
 
-//save values for profession
+// save values for profession
 function professionPeoples() {
   var profession = document.getElementById("profession");
   if (localStorage === "") {
@@ -107,7 +107,7 @@ function professionPeoples() {
   }
 }
 
-//save values of radio buttons
+// save values of radio buttons
 
 var radio = document.getElementsByName("gender");
 for (var i = 0; i < radio.length; i++) {
