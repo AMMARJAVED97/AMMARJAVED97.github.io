@@ -19,9 +19,9 @@ var items = [
 //   Question No 2
 
 var StudentInfo = {
-  firstName: "Ahsan",
-  lastName: "Saeed",
-  email: "saeeeahsan119@gmail.com",
+  firstName: "Ammar",
+  lastName: "Javed",
+  email: "abdulhakimsabir313@gmail.com",
   password: "12345",
   age: 23,
   gender: "male",
@@ -67,10 +67,10 @@ function CheckPopulation(name, gender, address, education, profession) {
 }
 
 const Peoples = new CheckPopulation(
-  "Ahsan Saeed",
+  "Ammar Javed",
   "Male",
-  "Model Colony",
-  "bs ce",
+  "Surjani Town",
+  "bscs",
   "android developer"
 );
 console.log(Peoples);
