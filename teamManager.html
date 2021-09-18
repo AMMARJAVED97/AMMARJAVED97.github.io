@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Manager</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="bg-azure" onload="teamSetting()">
+    <!-- nav bar -->
+    <nav>
+        <div class="nav nav-tabs mb-3 container-fluid" id="nav-tab" role="tablist">
+            <!-- back button -->
+            <a href="./dashboard.html" class="outline-theme-btn back-btn">
+                <i class="bi bi-arrow-left-circle back-btn"></i>
+            </a>
+            <button class="nav-link active nav-font" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Reports</button>
+            <button class="nav-link nav-font" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Settings</button>
+        </div>
+    </nav>
+    <!-- reports page -->
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="container-fluid d-flex justify-content-between">
+                <!-- member dropdown -->
+                <select name="members" id="memberNames" class="ms-3 outline-theme-btn mt-3 col-sm-3 col-md-2 bg-white">
+                    <option class="nav-font bg-white" value="All Members" selected>All Members</option>
+                </select>
+                <!-- date input -->
+                <input type="date" id="start" name="trip-start" class="mt-3 col-sm-3 col-md-3 me-3 input-date">
+                <i class="mt-3 icon bi bi-search" onclick="getResponse()"></i>
+            </div>
+            <div id="noResponse">
+                <div class="mx-auto my-5 col-8">
+                    <h1 class="display-1 teal">
+                        No Response Found
+                    </h1>
+                </div>
+            </div>
+            <div id="memberResponses">
+                <h2 class="mt-3 mx-3 display-6 fs-1">Filling for: <span id="responseDate"></span></h2>
+                <div class="m-5">
+                    <h3 class="mt-4 display-6 fs-2" id="respondedQ1"></h3>
+                    <h3 class="mt-2 display-6 fs-3" id="respondedA1"></h3>
+                    <h3 class="mt-4 display-6 fs-2" id="respondedQ2"></h3>
+                    <h3 class="mt-2 display-6 fs-3" id="respondedA2"></h3>
+                    <h3 class="mt-4 display-6 fs-2" id="respondedQ3"></h3>
+                    <h3 class="mt-2 display-6 fs-3" id="respondedA3"></h3>
+                </div>
+            </div>
+            <div id="allMemberResponses">
+            </div>
+        </div>
+        <!-- setting page -->
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <mark class="bg-azure lead mx-3 teal default">Questions:</mark>
+            <div class="my-3 mx-5">
+                <input type="text" placeholder="Enter Your Question." id="question1" class="question-bar"><br />
+                <input type="text" placeholder="Enter Your Question." id="question2" class="question-bar"><br />
+                <input type="text" placeholder="Enter Your Question." id="question3" class="question-bar">
+            </div>
+            <mark class="lead bg-azure mx-3 teal default">Members: </mark>
+            <div class="members-box d-flex justify-content-start flex-wrap" id="membersBox">
+                <!-- <div class="members ms-4 my-2">abc@gmail.com<div class="cross">X</div> -->
+            </div>
+            <div class="my-3 ms-5">
+                <input type="text" placeholder="Add Member" id="addMemberField" class="question-bar">
+                <button class="custom-btn member-btn my-5" onclick="addMember()" id="addBtn">Add</button>
+                <button class="custom-btn delete-btn my-5" onclick="deleteTeam()">Delete Team</button>
+            </div>
+
+            <div class="mt-3 ms-5">
+                <button class="custom-btn member-btn" onclick="addQuestions()" id="addQuestionsBtn">Save
+                    Changes</button>
+                <a href="./dashboard.html"><button class="custom-btn delete-btn">Cancel</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./project.js"></script>
+
+</html>
