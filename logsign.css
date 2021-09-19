@@ -1,0 +1,288 @@
+body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+          background-color: white;
+      }
+      
+      legend,
+      .nav-font,
+      .teal {
+          color: teal !important;
+      }
+      
+      
+      /* Login & Signup CSS start */
+      
+      form fieldset {
+          background-color: azure;
+          width: 800px;
+          margin: auto;
+      }
+      
+      form fieldset input,
+      .question-bar {
+          font-family: sans-serif;
+          margin: 1px auto 15px auto;
+          height: 60px;
+          width: 540px;
+          border: 2px solid black;
+          border-width: 0 0 1px 0;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          background-color: blanchedalmond;
+          font-size: large;
+      }
+      
+      input::-webkit-input-placeholder,
+      select,
+      .question-bar::-webkit-input-placeholder {
+          font-size: 0.9em;
+          line-height: 3;
+      }
+      
+      
+      /* form fieldset input:hover, form fieldset input:not( :hover) {
+          outline: none;
+      } */
+      
+      form fieldset input:focus,
+      select:focus,
+      .question-bar:focus {
+          outline: none;
+      }
+      
+      .form-fields {
+          width: fit-content;
+          margin: auto;
+      }
+      
+      .input-btn {
+          width: 110px;
+          height: 50px;
+          border-width: 0;
+          border-radius: 8px;
+          margin: 10px;
+          font-size: 1.2em;
+          color: teal;
+          cursor: pointer;
+      }
+      
+      .input-btn-div {
+          width: fit-content;
+          margin: auto;
+      }
+      
+      .input-btn:hover {
+          background-color: teal !important;
+          color: blanchedalmond !important;
+          cursor: pointer;
+      }
+      
+      .red-btn {
+          border-width: 0;
+          border-radius: 8px;
+          margin: 10px;
+          font-size: 1.2em;
+          width: fit-content;
+          background-color: red !important;
+          color: blanchedalmond !important;
+      }
+      
+      .red-btn:hover {
+          background-color: blanchedalmond !important;
+          color: red !important;
+          border: 1px solid red;
+          cursor: pointer;
+      }
+      
+      .acc {
+          width: fit-content;
+          margin: 5px auto;
+      }
+      
+      
+      /* Login & Signup CSS end */
+      
+      .default {
+          cursor: default;
+      }
+      
+      .theme-btn {
+          background-color: teal !important;
+          color: blanchedalmond !important;
+      }
+      
+      .theme-btn:hover {
+          color: teal !important;
+          background-color: blanchedalmond !important;
+      }
+      
+      .modal-btn {
+          position: fixed;
+          bottom: 40px;
+          right: 40px;
+          border-radius: 50%;
+      }
+      
+      .modal-input {
+          border-width: 0 0 2px 0 !important;
+      }
+      
+      .nav-tabs button {
+          width: 150px !important;
+      }
+      
+      .nav-tabs button:focus {
+          border: 2px solid teal !important;
+          border-width: 0 0 2px 0 !important;
+      }
+      
+      .nav-tabs button:hover {
+          background-color: teal !important;
+          color: blanchedalmond !important;
+      }
+      
+      .outline-theme-btn {
+          border: 1px solid teal;
+          color: teal;
+          background-color: blanchedalmond;
+      }
+      
+      .outline-theme-btn:hover {
+          background-color: teal !important;
+          color: blanchedalmond;
+      }
+      
+      .bg-azure {
+          background-color: azure !important;
+      }
+      
+      .bg-white {
+          background-color: white !important;
+      }
+      
+      .input-date {
+          height: 25px;
+          border: 1px solid teal;
+      }
+      
+      .team-cards-holder {
+          display: none;
+          max-width: 800px;
+          min-width: 200px;
+          margin: auto !important;
+      }
+      
+      .team-cards-holder a {
+          text-decoration: none;
+      }
+      
+      .back-btn {
+          position: absolute;
+          top: -3px;
+          right: 10px;
+          border-radius: 50%;
+      }
+      
+      a>i {
+          font-size: 2em;
+      }
+      
+      .question-bar,
+      .members-box {
+          background-color: azure;
+      }
+      
+      .members {
+          cursor: default;
+          background-color: blanchedalmond;
+          padding: 8px;
+          color: teal;
+          border: 0px solid teal;
+          border-radius: 50px;
+          vertical-align: text-top;
+      }
+      
+      .members>.cross {
+          display: inline-block;
+          text-align: center;
+          font-size: 1.4em;
+          font-weight: 500;
+          color: teal;
+          background-color: azure;
+          height: 35px;
+          width: 35px;
+          border: 1px solid teal;
+          border-radius: 50%;
+          margin-left: 8px;
+      }
+      
+      .cross:hover {
+          background-color: teal;
+          color: azure;
+          border-color: azure;
+      }
+      
+      .custom-btn {
+          width: 110px;
+          height: 50px;
+          border-width: 0;
+          border-radius: 8px;
+          margin: 10px;
+          font-size: 0.98em;
+          cursor: pointer;
+      }
+      
+      .member-btn {
+          color: teal;
+          background-color: blanchedalmond;
+      }
+      
+      .member-btn:hover {
+          border: 1px solid teal;
+      }
+      
+      .delete-btn {
+          color: red;
+          background-color: blanchedalmond;
+      }
+      
+      .delete-btn:hover {
+          border: 1px solid red;
+      }
+      
+      #date {
+          font-weight: 400;
+          text-decoration: underline;
+      }
+      
+      #question_1,
+      #question_2,
+      #question_3 {
+          display: none;
+          font-size: 2em;
+      }
+      
+      #answer1,
+      #answer2,
+      #answer3 {
+          display: none;
+          margin-left: 0px;
+      }
+      
+      .btn-div {
+          margin-top: -35px;
+      }
+      
+      .icon {
+          color: teal;
+          cursor: pointer;
+      }
+      
+      #memberResponses,
+      #noResponse,
+      #allMemberResponses {
+          display: none;
+      }
